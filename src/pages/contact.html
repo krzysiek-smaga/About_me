@@ -12,24 +12,24 @@
         <header>
             <ul class="nav-bar">
                 <li><a href="../../index.html">Home</a></li>
-                <li><a href="about.html">About me</a></li>
+                <li><a href="about.html">Realizations</a></li>
                 <li><a href="contact.html">Contact </a></li>
             </ul>
         </header>
         <div class="content">
             <div class="contact">
                 <h1>Contact</h2>
-                <form action="" method="POST">
+                <form id="contact-form" action="#" method="GET">
                     <label for="name" class="label">Name</label>
-                    <input id="name" class="custom-input" name="name" placeholder="Enter your name">
+                    <input type="text" id="name" class="custom-input" name="name" placeholder="Enter your name">
 
                     <label for="email" class="label">E-mail</label>
-                    <input id="email" class="custom-input" name="email" placeholder="Give your email">
+                    <input type="email" id="email" class="custom-input" name="email" placeholder="Give your email">
 
                     <label for="message" class="label">Message</label>
                     <textarea id="message" class="custom-input" name="message" placeholder="Write your message"></textarea>
 
-                    <input class="custom-button" type="submit" value="Send">
+                    <input id="btn-send" value="Send" class="custom-button" type="submit" disabled="disabled" onclick="validInputs();">
                 </form>
             </div>
             <div class="address-and-map">
@@ -50,5 +50,6 @@
             <div class="copyright">Copyright © 2021 Krzysztof Smaga</div>
         </footer>
     </div>
+    <script src="../scripts/validForm.js"></script>
 </body>
 </html>
